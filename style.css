@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(221, 216, 216);
+    /*background-image: url(Hard\ work.jpg);*/
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    background-color: black;
+    border-radius: 12px;
+    border: 5px solid rgba(2, 10, 22, 0.774);
+}
+.content button{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    border: 0;
+    margin: 2px;
+    cursor: pointer;
+    font-size: 25px;
+}
+.section1,.section2,.section3,.section4,.section5{
+    display: flex;
+}
+.equal{
+    flex: 1;
+    background-color: rgb(12, 12, 117);
+}
+
+#display{
+    line-height: 70px;
+    width: 295px;
+    cursor: pointer;
+    background-color: grey;
+    text-align: right;
+    color: black;
+    font-size: 30px;
+}
+.operator{
+    background-color: rgb(73, 202, 202);
+}
+.number{
+    background-color: hwb(160 50% 0%);
+    filter: brightness(.8);
+}
+
+.clear{
+    background-color: darkred;
+}
+
+#negative{
+    background-color: darkorange;
+}
+
+.percentage{
+    background-color: #0ba325;
+}
