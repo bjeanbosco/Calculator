@@ -99,6 +99,7 @@ function Clear(){
 
 function unDo(){
         display.value=display.value.slice(0,-1)
+        screenMemory=screenMemory.slice(0,-1)
 }
 
 //this is function for calculating percentage
