@@ -30,7 +30,7 @@ Memory.push(screenMemory)
 Memory.push(e.target.value)
 console.log(Memory);
 screenMemory=''
-display.value=''
+display.value=e.target.value
 }
 
 //this is the function for addition calcuation
@@ -97,8 +97,8 @@ function Clear(){
 }
 //this is the undo function once you did wrong
 function unDo(){
-    display.value=screenMemory.slice(0,-1)
-    screenMemory=''
+   display.value=display.value.slice(0,-1)
+    
 }
 
 //this is function for calculating percentage
