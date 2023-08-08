@@ -23,12 +23,14 @@ function getNumber(e){
    
 }
 //this function  is for generating operator
+let y;
 function getOperator(e){
+    y=e.target.value
 Memory.push(screenMemory)
-display.value +=e.target.value
+display.value +=y
+
+Memory.push(y)
 screenMemory=''
-Memory.push(e.target.value)
-display.value===e.target.value
 
 }
 
@@ -97,9 +99,11 @@ function Clear(){
 }
 //this is the undo function once you did wrong
 function unDo(){
-   display.value=display.value.slice(0,-1)
-    
-}
+    display.value=display.value.slice(0,-1)
+     screenMemory=display.value
+
+  }
+
 //this is function for calculating percentage
 function percentage(){
     display.value=screenMemory/100
