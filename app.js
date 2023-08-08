@@ -13,7 +13,6 @@ document.querySelector('.delete').addEventListener('click',unDo)
 let display=document.getElementById('display')
 //below are variables for storing data
 let screenMemory=''
-let secondNumber=''
 let Memory=[]
 let step=0
 const Symbols=['+','*','/','-']
@@ -25,12 +24,12 @@ function getNumber(e){
 }
 //this function  is for generating operator
 function getOperator(e){
-display.value +=e.target.value
 Memory.push(screenMemory)
-Memory.push(e.target.value)
-console.log(Memory);
+display.value +=e.target.value
 screenMemory=''
-display.value=''
+Memory.push(e.target.value)
+display.value===e.target.value
+
 }
 
 //this is the function for addition calcuation
@@ -52,6 +51,7 @@ function divide(a,b){
 //the function is for to works on all operations
 
 function operate(){
+    
 Memory.push(screenMemory)
 console.log(Memory);
 for(let i=0;i<Memory.length;i++){
@@ -96,9 +96,9 @@ function Clear(){
     display.value=''
 }
 //this is the undo function once you did wrong
+
 function unDo(){
-    display.value=screenMemory.slice(0,-1)
-    screenMemory=''
+        display.value=display.value.slice(0,-1)
 }
 
 //this is function for calculating percentage
