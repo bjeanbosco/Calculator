@@ -26,9 +26,9 @@ function getNumber(e){
 function getOperator(e){
 Memory.push(screenMemory)
 display.value +=e.target.value
-screenMemory=''
+
 Memory.push(e.target.value)
-display.value===e.target.value
+screenMemory=''
 
 }
 
@@ -98,7 +98,7 @@ function Clear(){
 //this is the undo function once you did wrong
 function unDo(){
    display.value=display.value.slice(0,-1)
-    
+   screenMemory=display.value
 }
 //this is function for calculating percentage
 function percentage(){
