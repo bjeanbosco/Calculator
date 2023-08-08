@@ -96,12 +96,10 @@ function Clear(){
     display.value=''
 }
 //this is the undo function once you did wrong
-
 function unDo(){
-        display.value=display.value.slice(0,-1)
-        screenMemory=screenMemory.slice(0,-1)
+   display.value=display.value.slice(0,-1)
+    
 }
-
 //this is function for calculating percentage
 function percentage(){
     display.value=screenMemory/100
