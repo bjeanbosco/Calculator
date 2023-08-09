@@ -41,9 +41,9 @@ body{
     width: 295px;
     cursor: pointer;
     background-color: grey;
-    text-align: right;
-    color: black;
-    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
 }
 .operator{
     background-color: rgb(73, 202, 202);
